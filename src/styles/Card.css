@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+}
+
+.card--image{
+    width: 126px;
+    height: 168px;
+    border-radius: 6px;
+}
+
+/* Info of the card */
+
+.card--data{
+    display: flex;
+    flex-direction: column;
+}
+/* EXTRA */
+
+.secondary{
+    color: #2B283A;
+}

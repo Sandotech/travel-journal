@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); */
+
+nav{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: #F55A5A;
+    width: 100%;
+}
+section{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar--text{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
