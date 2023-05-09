@@ -1,13 +1,22 @@
+.cards-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
 .card{
     display: flex;
     margin: 40px;
     gap: 20px;
+    height: 168px;
 }
 
 .card--image{
     width: 126px;
     height: 168px;
     border-radius: 6px;
+    object-fit: cover;
 }
 
 /* Info of the card */
@@ -15,9 +24,68 @@
 .card--data{
     display: flex;
     flex-direction: column;
+    max-height: 100%;
+    justify-content: center;
+}
+
+.card--info{
+    display: flex;
+    justify-content: start;
+    gap: 4px 12px;
+}
+
+.card--googleMap-logo{
+    width: 7px;
+    height: 10px;
+}
+
+.card--location{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+}
+
+.card--location--googleData{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #918E9B;
+}
+
+.card--travel-destiny{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.card-dateStatement{
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+}
+
+.card--description{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
 }
 /* EXTRA */
 
 .secondary{
     color: #2B283A;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card--image{
+        width: 100%;
+        object-fit: cover;
+    }
 }

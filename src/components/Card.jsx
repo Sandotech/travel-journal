@@ -6,6 +6,7 @@ import '../styles/Card.css';
 
 const Card = () => {
     return (
+        <div className='cards--list'>
         <main className='card'>
             <img src={Data[0].imageUrl} alt="" className='card--image' />
             <article className='card--data'>
@@ -19,6 +20,7 @@ const Card = () => {
                 <p className='card--description secondary'>{Data[0].description}</p>
             </article>
         </main>
+        </div>
     );
 }
 
